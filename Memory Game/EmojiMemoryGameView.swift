@@ -15,13 +15,14 @@ struct EmojiMemoryGameView: View {
         VStack {
             HStack {
                 ForEach(gameViewModel.cards) { card in
-                    CardView(card: card) .onTapGesture {
+                    CardView(card: card)
+                        .aspectRatio (2/3, contentMode: .fit)
+                        .onTapGesture {
                         self.gameViewModel.choose(card: card)
                     }
                 }
             }
             .foregroundColor(.pink)
-            .font(.largeTitle)
         }.padding()
     }
 }
@@ -30,21 +31,37 @@ struct CardView: View {
     var card: MemoryGame<String>.Card
     
     var body: some View {
-        ZStack {
-            if card.isFaceUp {
-                RoundedRectangle (cornerRadius: 10).fill(Color.white)
-                RoundedRectangle (cornerRadius: 10).stroke(lineWidth: 2)
-                Text(card.content)
-            } else {
-                RoundedRectangle (cornerRadius: 10).fill()
-            }
+        GeometryReader { geometry in
+            self.body(for: geometry.size)
         }
     }
-}
 
+
+func body(for size: CGSize) -> some View {
+    ZStack {
+        if card.isFaceUp {
+            RoundedRectangle (cornerRadius: cornerRadius)
+                .fill(Color.white)
+            RoundedRectangle (cornerRadius: cornerRadius)
+                .stroke(lineWidth: lineWidth)
+            Text(card.content)
+        } else {
+            RoundedRectangle (cornerRadius: cornerRadius)
+                .fill()
+            }
+        }
+    .font(Font
+            .system(size: min(size.width, size.height) * fontScaleFactor))
+}
+    let cornerRadius: CGFloat = 10.0
+    let lineWidth: CGFloat = 2
+    let fontScaleFactor: CGFloat = 0.6
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         EmojiMemoryGameView(gameViewModel: EmojiMemoryGame())
     }
 }
+
+
