@@ -15,6 +15,9 @@
 		E443DDA02551C9D4007F417F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E443DD9F2551C9D4007F417F /* Preview Assets.xcassets */; };
 		E443DDA32551C9D4007F417F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E443DDA12551C9D4007F417F /* LaunchScreen.storyboard */; };
 		E443DDAB2551EEAB007F417F /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E443DDAA2551EEAB007F417F /* MemoryGame.swift */; };
+		E4FAD07825BE246000F7E110 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD07725BE246000F7E110 /* Grid.swift */; };
+		E4FAD07B25BE2B4500F7E110 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD07A25BE2B4500F7E110 /* GridLayout.swift */; };
+		E4FAD07E25BF37B200F7E110 /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FAD07D25BF37B200F7E110 /* Array+Identifiable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		E443DDA22551C9D4007F417F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E443DDA42551C9D4007F417F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E443DDAA2551EEAB007F417F /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = SOURCE_ROOT; };
+		E4FAD07725BE246000F7E110 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		E4FAD07A25BE2B4500F7E110 /* GridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
+		E4FAD07D25BF37B200F7E110 /* Array+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,9 @@
 				E443DD962551C9CF007F417F /* AppDelegate.swift */,
 				E443DD982551C9CF007F417F /* SceneDelegate.swift */,
 				E443DD9A2551C9CF007F417F /* EmojiMemoryGameView.swift */,
+				E4FAD07725BE246000F7E110 /* Grid.swift */,
+				E4FAD07D25BF37B200F7E110 /* Array+Identifiable.swift */,
+				E4FAD07A25BE2B4500F7E110 /* GridLayout.swift */,
 				E43AEF182559FB7B00536BBF /* EmojiMemoryGame.swift */,
 				E443DD9C2551C9D4007F417F /* Assets.xcassets */,
 				E443DDA12551C9D4007F417F /* LaunchScreen.storyboard */,
@@ -157,6 +166,9 @@
 				E443DDAB2551EEAB007F417F /* MemoryGame.swift in Sources */,
 				E443DD9B2551C9CF007F417F /* EmojiMemoryGameView.swift in Sources */,
 				E43AEF192559FB7B00536BBF /* EmojiMemoryGame.swift in Sources */,
+				E4FAD07E25BF37B200F7E110 /* Array+Identifiable.swift in Sources */,
+				E4FAD07B25BE2B4500F7E110 /* GridLayout.swift in Sources */,
+				E4FAD07825BE246000F7E110 /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
